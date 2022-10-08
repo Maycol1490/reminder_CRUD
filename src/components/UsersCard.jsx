@@ -9,9 +9,6 @@ const UsersCard = ({user,deleteUserByID,setUpdateUser,handleFormO}) => {
         handleFormO()
     }
 
-
-    console.log(user.birthday[5]+user.birthday[6]);
-
   return (
     <article className={`months${user.birthday[5]+user.birthday[6]} inf-usersCard`}>
         <h2 className='users-name'>{`${user.first_name} ${user.last_name}`}</h2>

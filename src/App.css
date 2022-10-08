@@ -26,6 +26,7 @@ button {
     border-radius: 20px;
     font-weight: 500;
     color: var(--color);
+    cursor: pointer;
 }
 
 button:before {
@@ -88,13 +89,14 @@ button:active:before {
 .container-form {
     position: fixed;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #0005;
-    backdrop-filter: blur(15px);
-    z-index: 100;
+    backdrop-filter: blur(5px);
+    z-index: 1;
 }
 
 .form-inf {
@@ -324,6 +326,19 @@ button:active:before {
     gap: 1rem;
     align-items: end;
     margin: 1rem;
+}
+.users-footer i{
+    font-size: 1.3rem;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.users-footer i:hover{
+    background-color: #0005;
 }
 
 .container-colors {

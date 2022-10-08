@@ -13,6 +13,9 @@ function App() {
   const [users, setUsers] = useState()
   const [updateUser, setUpdateUser] = useState()
   const [modalForm, setModalForm] = useState(false)
+
+
+
   const getAllUsers = () =>{
     const URL = `${baseURL}/users/`
     axios.get(URL)
@@ -78,7 +81,10 @@ function App() {
       handleFormC={handleFormC}
       />
       </div>
-      <Colors/>
+      <Colors 
+      getAllUsers={getAllUsers}
+      users={users}
+      />
       <div className='container-cardUsers'>
       {
         users?.map(user =>(

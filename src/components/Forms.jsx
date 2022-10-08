@@ -58,7 +58,7 @@ const Forms = ({ CreateNewUser, updateUser, updateUserByID, setUpdateUser, handl
                 </div>
                 <div className='form-input' >
                     <label htmlFor="birthday">Birthday</label>
-                    <input type="date" id='birthday' {...register('birthday')} />
+                    <input required type="date" id='birthday' {...register('birthday')} />
                 </div>
                 <div className='form-input' >
                     <label htmlFor="email">Email</label>
