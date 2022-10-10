@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/usersCard.css'
 import { BsFillTrashFill, BsPencilSquare } from "react-icons/bs";
 
 

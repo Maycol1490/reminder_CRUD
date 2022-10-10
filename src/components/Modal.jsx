@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/modal.css'
 import { BsXLg } from "react-icons/bs"
 
 const Modal = ({text1,text2,setModalDelete,setModalEdit}) => {

@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/forms.css'
 import { BsXLg } from "react-icons/bs";
 import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
