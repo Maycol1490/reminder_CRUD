@@ -1,8 +1,10 @@
 import React from 'react'
 import { BsFillTrashFill, BsPencilSquare } from "react-icons/bs";
 
-const UsersCard = ({user,deleteUserByID,setUpdateUser,handleFormO}) => {
 
+const UsersCard = ({user,deleteUserByID,setUpdateUser,handleFormO,setUserCard}) => {
+
+    setUserCard=(user)
 
     const handleUpdateUser = ()=>{
         setUpdateUser(user)

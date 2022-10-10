@@ -50,11 +50,11 @@ const Forms = ({ CreateNewUser, updateUser, updateUserByID, setUpdateUser, handl
                 </h3>
                 <div className='form-input' >
                     <label htmlFor="name">Name</label>
-                    <input type="text" id='name' {...register('first_name')} />
+                    <input required type="text" id='name' {...register('first_name')} />
                 </div>
                 <div className='form-input' >
                     <label htmlFor="lastName">Last Name</label>
-                    <input type="text" id='lastName' {...register('last_name')} />
+                    <input required type="text" id='lastName' {...register('last_name')} />
                 </div>
                 <div className='form-input' >
                     <label htmlFor="birthday">Birthday</label>
@@ -62,11 +62,11 @@ const Forms = ({ CreateNewUser, updateUser, updateUserByID, setUpdateUser, handl
                 </div>
                 <div className='form-input' >
                     <label htmlFor="email">Email</label>
-                    <input type="email" id='email' {...register('email')} />
+                    <input required type="email" id='email' {...register('email')} />
                 </div>
                 <div className='form-input' >
                     <label htmlFor="password">Password</label>
-                    <input type="password" id='password' {...register('password')} />
+                    <input autoComplete='password' type="password" id='password' {...register('password')} />
                 </div>
                 <button>{updateUser ? 'update user' : 'Create User'}</button>
             </form>
