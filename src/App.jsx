@@ -71,8 +71,6 @@ function App() {
   const handleFormC = () => {
     setModalForm(false)
   }
-  console.log(updateUser);
-
   return (
     <div className="App">
       <div className='container-title'>

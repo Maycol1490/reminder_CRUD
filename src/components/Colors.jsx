@@ -3,10 +3,6 @@ import '../styles/color.css'
 
 const Colors = ({users,getAllUsers}) => {
 
-  console.log(users)
-
-
-
   return (
     <div className='container-colors'>
         <div className="colors months01">January</div>
